@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.dateslider-box {
+  font: 15px "DIN Pro Medium", Arial, Helvetica, sans-serif;
+  position: absolute;
+  width: 50%;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.dateslider-box .dateslider-inner {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.dateslider-box input {
+  background-color: transparent;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  cursor: ew-resize;
+}
+
+#amount {
+  border: 0;
+  color: #707070;
+  font-weight: bold;
+}
+
+.toggle-box {
+  font: 12px "DIN Pro Medium", Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+  text-align: right;
+}
+
+.info-box {
+  font: 15px "DIN Pro Medium", Arial, Helvetica, sans-serif;
+  color: #707070;
+  position: absolute;
+  bottom: 40px;
+  left: 10px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.info-text {
+  display: none;
+}
+
+.info-box:hover {
+  background-color: white;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: auto;
+}
+
+.info-box:hover .info-text {
+  display: inline-block;
+  font: 15px "DIN Pro Medium", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  bottom: 40px;
+  left: 10px;
+}
+
+.mapboxgl-popup {
+  max-width: none;
+  font: 12px/20px "DIN Pro Medium", Arial, Helvetica, sans-serif;
+}
+
+.mapboxgl-popup-content {
+  position: relative;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 10px 10px 15px;
+  pointer-events: auto;
+}

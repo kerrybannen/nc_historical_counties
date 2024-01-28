@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>NC Historical Counties</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+  <script src="https://kit.fontawesome.com/2cef05e51f.js" crossorigin="anonymous"></script>
+  <script src="./script.js" defer></script>
+  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet" />
+  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet" />
+  <link href="./style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="map"></div>
+  <div class="dateslider-box">
+    <div class="dateslider-inner">
+      <p>
+        <strong>Date: </strong>
+        <span type="text" id="amount"></span>
+      </p>
+      <p>
+        <input type="range" min="-9624769438000" max="-315601438000" step="86400000" value="-9623966400000"
+          id="dateslider" />
+      </p>
+    </div>
+  </div>
+  <div class="toggle-box" style="position: absolute; top: 10px; right: 10px">
+    <p>
+      <label for="satellite-toggle">Satellite</label>
+      <input type="checkbox" id="satellite-toggle" class="switch" /><span class="slider"></span>
+    </p>
+    <p>
+      <label for="labels-toggle">Labels</label>
+      <input type="checkbox" id="labels-toggle" class="switch" checked/><span class="slider"></span>
+    </p>
+  </div>
+  <div class="info-box">
+    <i class="fa-solid fa-circle-info"></i>
+    <span class="info-text">Data adapted from The Newberry Library's
+      <a href="https://digital.newberry.org/ahcb/" target="_blank" rel="noopener noreferrer">Atlas of Historical County
+        Boundaries</a>
+    </span>
+  </div>
+</body>
+
+</html>
